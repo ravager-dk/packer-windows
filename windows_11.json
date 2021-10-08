@@ -10,7 +10,7 @@
       ],
       "boot_wait": "2m",
       "communicator": "winrm",
-      "configuration_version": "8.0",
+      "configuration_version": "9.0",
       "cpus": "2",
       "disk_size": "{{user `disk_size`}}",
       "floppy_files": [
@@ -165,7 +165,7 @@
       "keep_input_artifact": false,
       "output": "windows_11_{{.Provider}}.box",
       "type": "vagrant",
-      "vagrantfile_template": "vagrantfile-windows_10.template"
+      "vagrantfile_template": "vagrantfile-windows_11.template"
     }
   ],
   "provisioners": [
