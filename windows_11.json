@@ -173,12 +173,20 @@
       "execute_command": "{{ .Vars }} cmd /c \"{{ .Path }}\"",
       "remote_path": "/tmp/script.bat",
       "scripts": [
-        "./scripts/enable-rdp.bat"
+        "./scripts/enable-rdp.bat",
+        "./scripts/chocolatey.bat",
+        "./scripts/chocopacks.bat"
       ],
       "type": "windows-shell"
     },
     {
+      "type": "file",
+      "source": "./bin/GlobalProtect64.msi",
+      "destination": "/tmp/GlobalProtect64.msi"
+    },
+    {
       "scripts": [
+        "./scripts/install-GlobalProtect.ps1",
         "./scripts/vm-guest-tools.ps1",
         "./scripts/debloat-windows.ps1"
       ],

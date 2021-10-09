@@ -1,0 +1,1 @@
+msiexec.exe /qn /i c:\tmp\GlobalProtect64.msi /norestart
